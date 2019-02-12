@@ -1,0 +1,11 @@
+<h1><%= @task.title %></h1>
+<p id="details"><%= @task.details %></p>
+<div>
+  <input type="checkbox" id="checkbox69" class="css-checkbox lrg" <%= @task.completed == true ? "checked" : "unchecked" %>>
+  <label for="task" class="css-label lrg vlad"><p>This task is <%= @task.completed == true ? "completed" : "not completed" %></p></label>
+</div>
+
+<%= link_to "🖊 Edit task", edit_path %>
+
+
+<%= link_to "↩️ Back to list", tasks_path %>
